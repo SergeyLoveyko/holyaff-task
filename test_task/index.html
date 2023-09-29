@@ -33,11 +33,11 @@
       background: #f2f2f2;
     }
     body.with_background {
-      background: url("img-1.png");
+      background: url("./assets/img-1.png");
     }
     @media (max-width: 800px) {
       body.with_background {
-        background: url("img-1.png");
+        background: url("./assets/img-1.png");
       }
     }
     .text-primary {
@@ -87,7 +87,8 @@
   <div id="p_body_content">
     <div class="top-header" style="background: #232f3e; padding: 12px 10px;">
       <img src="./assets/image/menu-top.png" alt="" style="margin-top: 3px;">
-      <img src="./assets/image/cart.png" alt="" style="float: right;"></div>
+      <img src="./assets/image/cart.png" alt="" style="float: right;">
+    </div>
     <div style="display: flex; padding: 10px; background: #37475A;">
       <div class="header_flex_item">
         <font style="vertical-align: inherit;">
@@ -520,8 +521,12 @@
                       style="color: red;font-weight: bold">€1.00</span> você poderá comprar um novo iPhone 11 Pro,
                     incluindo frete.</p>
                   <p>3. Seu iPhone11 Pro será enviado dentro de 5 a 7 dias.</p>
-                  <a href="http://{trackingdomain}/click/?origin={origin}&fbpixel={lander.param:fbpixel}"
+                  <!-- <a href="http://{trackingdomain}/click/?origin={origin}&fbpixel={lander.param:fbpixel}" -->
+                  <!-- <a href="#"
                     onclick="fbq('track', 'InitiateCheckout');" id="p_modal_button3" class="btn btn-success btn-lg"
+                    style="background-color:#ed9220; border-color:#ed9220">OK</a> -->
+                  <a href="#"
+                    onclick="return false;" id="p_modal_button3" class="btn btn-success btn-lg"
                     style="background-color:#ed9220; border-color:#ed9220">OK</a>
                 </div>
               </div>
@@ -649,7 +654,7 @@
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">Curte·comente</font>
                   </font>
-                  <img src="like.png" width="15px" height="15px">
+                  <img src="./assets/image/like.png" width="15px" height="15px">
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">22</font>
                   </font>
@@ -936,7 +941,7 @@
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">Curte·comente</font>
                   </font>
-                  <img src="like.png" width="15px" height="15px">
+                  <img src="./assets/image/like.png" width="15px" height="15px">
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">30</font>
                   </font>
@@ -962,7 +967,7 @@
   </div>
 
 
-
+  <script src="./assets/js/custom.js"></script>
 </body>
 
 </html>
