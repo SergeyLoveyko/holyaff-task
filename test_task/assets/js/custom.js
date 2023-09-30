@@ -92,7 +92,7 @@ class NewComment {
 btnComment.addEventListener('click', () => {
   if (formComment.value !== '') {
     new NewComment(
-      "../../assets/image/inkognito.png",
+      "./assets/image/inkognito.png",
       "анонимный гость",
       formComment.value,
       ".comments_content"
